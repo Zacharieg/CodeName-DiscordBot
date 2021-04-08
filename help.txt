@@ -1,0 +1,31 @@
+**Bonjour, Agent, je suis CodeName, le jeu de société**
+Mon préfixe est */cd*, toutes les commandes qui vont suivre doivent en être précédé
+
+**Commandes Générales**
+ - ping : célèbre le fameux sport du tennis de table
+ - help : affiche ce message
+ - rules : affiche les règles du jeu
+ 
+**JEU**
+La mise en place du jeu se déroule en trois phase
+    **Setup**
+     - setup : met en place les channels et rôles nécessaires au jeu
+     - unsetup : désinstalle tout ça, ne laissant aucune trace du bot sur ce serveur
+
+    **Démarrage de la mission**
+     - start <nombre de points>: commence une nouvelle mission avec un maximum de point (par défaut : 6 points)
+     - join : rejoindre la mission en préparation
+     - leave : partir de la mission en préparation
+     - players : affiche les joueurs actuellement présent dans la partie
+    
+    **Jouer dans la mission**
+     - begin : commencer la mission (necessite au moins 4 joueurs)
+     - mission : affiche les informations générale à la mission en cours
+     - hint <mot> <nombre de mot> : pour les maitres espions, indique un indice pour un nombre de mot à trouver
+     - guess <mot> : pour les apprentis, choisi un mot à dévoiler
+     - finish : annule la mission actuelle
+
+**Base de donnée de mot**
+    - w : afficher les mots dans la base de donnée
+    - addw : ajouter un mot dans la base de donnée
+    - delw : supprimer un mot dans la base de donnée

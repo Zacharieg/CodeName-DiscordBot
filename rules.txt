@@ -1,0 +1,37 @@
+**Principe et Règles Générales**
+Dans ce jeu, deux équipes d'espions vont s'affronter, et dans chacune des équipes se trouve un maitre (les autres sont des apprentis).
+Les deux équipes vont découvrir une liste de mot commune qui correspondent à des noms d'agents. Derrières ses noms se cachent des espions des deux équipes, des témoins et un traitre, que seul les maitres espions connaissent.
+Le but de l'équipe est de découvrir avant l'autre tous ses espions sans découvrir le traitre, cependant seuls les apprentis peuvent révéler des mots.
+Tour par tour, les maitres espions vont donc pouvoir indiquer aux apprentis un indice, un mot, ainsi qu'un nombre de mots auquel celui-ci fait référence.
+*Par exemple : Dans l'équipe bleue, Jean est le maitre espion de Gertrude et Thérèse. Parmi les mots communs, Jean sait que derrière les mots "table" et "cabane" se trouvent des espions de leur couleur (Bleu). Jean décide donc d'indiquer l'indice "bois" pour deux mots. Il doit cependant faire attention au traitre qui n'est autre que le mot loup*
+
+^
+Ensuite, les apprentis discutent entre eux pour trouver les mots qu'a indiqué le maitre espion. Quand ils se sont décidé, ils peuvent révéler un mot.
+- si le mot est de leur équipe, ils marquent un point et continue de chercher jusqu'à avoir révélé autant de mot que leur maitre espion leur a indiqué
+- si le mot est dans l'équipe adverse, l'équipe adverse marque un point et ils finissent leur tour (ils doivent attendre un nouvel indice pour révéler des mots)
+- si le mot est un témoin alors aucune équipe ne marque de point et ils finissent leur tour
+- si le mot et le traitre alors la partie est finie et leur équipe perd automatiquement
+Un mot révélé est révélé pour tout le monde, il ne peut pas être révélé une nouvelle fois au cours de la partie.
+*Dans notre exemple, après discussion, Gertrude et Thérèse décident de révéler "bucheron", qui n'est autre qu'un espion de l'équipe adverse ! Elles ne peuvent même pas essayer de révéler le deuxième mot et finissent leur tour*
+
+^
+Une fois que les apprentis des deux équipes ont fini leur tour (en ayant deviné tous les mots ou alors en se trompant sur un), les maitres doivent annoncer un nouvel indice pour un nouveau nombre de mots.
+Ce jeu n'est pas un jeu de rapidité, seulement au dernier tour les deux équipes peuvent gagner en même temps, lors de celui-ci il faudra donc être particulièrement rapide : la première équipe ayant révélé tous ses mots gagne !
+
+^
+**Lancer la partie**
+Tout d'abord, si ce n'est pas déjà fait, vous devriez faire la commande */cd setup* et je vous installerai une aire de jeu tout à fait convenable.
+Une mission se lance avec */cd start* ou */cd start X* ou X est le nombre d'espion par équipe. Augmenter X augmente la durée et le nombre de mot de la partie (par défaut 6).
+Une fois une mission lancée, n'importe qui peux la rejoindre avec */cd join*, ou la quitter avec */cd leave*. On peut aussi voir le nom des joueurs dans la partie avec */cd players*
+Ensuite, quand toutes les personnes voulant jouer ont rejoins la partie, on peut la lancer avec */cd begin* (il faut néanmoins un minimum de 4 personnes).
+
+^
+**Jouer**
+Une fois la commande */cd begin* lancée, je départagerai les rôles equipe bleue et equipe rouge de façon équitable et aléatoire, puis je choisirai un joueur par équipe pour être le maitre espion.
+Tous les joueurs devront regarder dans le pannel de droite pour savoir leur équipe et leur rôle.
+Ensuite, les équipes découvrent les mots en jeu dans le salon #📜-mots et les maitres espions découvrent leurs correspondance dans #🤐-espions
+Dans #🎲-jeu, je répeterai les actions que vous allez faire dans le jeu.
+Des salon vocaux seront aussi disponible pour plus de convivialité.
+Pendant le jeu, les deux commandes à utiliser sont */cd hint <indice> <nombre de mot>* pour les maitres espions pour donner des indices (remplacez les valeurs entre <> par votre indice et votre nombre) et */cd guess <mot à révéler>* pour les apprentis (pour révéler un mot)
+Les mots seront rayés tour à tour tandis qu'ils sont révélé dans les deux salons #📜-mots et #🤐-espions
+Si vous avez des questions sur le jeu ou sur moi, vous pouvez les poser à Le Z | Sigma#8415, mon créateur.
